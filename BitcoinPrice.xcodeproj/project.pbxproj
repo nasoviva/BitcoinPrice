@@ -13,6 +13,10 @@
 		0D79E96D2C28689900B64A79 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0D79E96C2C28689900B64A79 /* Base */; };
 		0D79E96F2C28689A00B64A79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D79E96E2C28689A00B64A79 /* Assets.xcassets */; };
 		0D79E9722C28689A00B64A79 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0D79E9712C28689A00B64A79 /* Base */; };
+		0D79E97B2C28F26C00B64A79 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D79E97A2C28F26C00B64A79 /* CoinManager.swift */; };
+		0D79E97D2C28FAFE00B64A79 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D79E97C2C28FAFE00B64A79 /* CoinData.swift */; };
+		0D79E9842C2905A800B64A79 /* Launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D79E9822C2905A800B64A79 /* Launch.png */; };
+		0D79E9852C2905A800B64A79 /* Main.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D79E9832C2905A800B64A79 /* Main.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		0D79E96E2C28689A00B64A79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D79E9712C28689A00B64A79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D79E9732C28689A00B64A79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D79E97A2C28F26C00B64A79 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		0D79E97C2C28FAFE00B64A79 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
+		0D79E9822C2905A800B64A79 /* Launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launch.png; sourceTree = "<group>"; };
+		0D79E9832C2905A800B64A79 /* Main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		0D79E9642C28689900B64A79 /* BitcoinPrice */ = {
 			isa = PBXGroup;
 			children = (
+				0D79E9812C29018B00B64A79 /* Controller */,
+				0D79E97F2C29017A00B64A79 /* View */,
+				0D79E97E2C2900CD00B64A79 /* Documentation */,
+				0D79E9792C28F25600B64A79 /* Model */,
 				0D79E9652C28689900B64A79 /* AppDelegate.swift */,
 				0D79E9672C28689900B64A79 /* SceneDelegate.swift */,
-				0D79E9692C28689900B64A79 /* ViewController.swift */,
-				0D79E96B2C28689900B64A79 /* Main.storyboard */,
 				0D79E96E2C28689A00B64A79 /* Assets.xcassets */,
-				0D79E9702C28689A00B64A79 /* LaunchScreen.storyboard */,
 				0D79E9732C28689A00B64A79 /* Info.plist */,
 			);
 			path = BitcoinPrice;
+			sourceTree = "<group>";
+		};
+		0D79E9792C28F25600B64A79 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D79E97A2C28F26C00B64A79 /* CoinManager.swift */,
+				0D79E97C2C28FAFE00B64A79 /* CoinData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D79E97E2C2900CD00B64A79 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				0D79E9822C2905A800B64A79 /* Launch.png */,
+				0D79E9832C2905A800B64A79 /* Main.png */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		0D79E97F2C29017A00B64A79 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D79E96B2C28689900B64A79 /* Main.storyboard */,
+				0D79E9702C28689A00B64A79 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0D79E9812C29018B00B64A79 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D79E9692C28689900B64A79 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +169,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D79E9842C2905A800B64A79 /* Launch.png in Resources */,
 				0D79E96F2C28689A00B64A79 /* Assets.xcassets in Resources */,
+				0D79E9852C2905A800B64A79 /* Main.png in Resources */,
 				0D79E9722C28689A00B64A79 /* Base in Resources */,
 				0D79E96D2C28689900B64A79 /* Base in Resources */,
 			);
@@ -138,7 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D79E97B2C28F26C00B64A79 /* CoinManager.swift in Sources */,
 				0D79E96A2C28689900B64A79 /* ViewController.swift in Sources */,
+				0D79E97D2C28FAFE00B64A79 /* CoinData.swift in Sources */,
 				0D79E9662C28689900B64A79 /* AppDelegate.swift in Sources */,
 				0D79E9682C28689900B64A79 /* SceneDelegate.swift in Sources */,
 			);
